@@ -13,14 +13,14 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class CalculatorTest {
 
-    //field injection af service-klasse
-    @Autowired
     private Calculator calculator;
 
-    /*CalculatorTest(Calculator calculator){
+    //spring skal injecte i constructoren - gør den ikke uden autowired
+    @Autowired
+    CalculatorTest(Calculator calculator){
         //arrange
         this.calculator = calculator;
-    }*/
+    }
 
     /*@BeforeAll
     void setUp(){
