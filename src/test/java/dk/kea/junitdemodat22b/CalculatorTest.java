@@ -74,4 +74,9 @@ class CalculatorTest {
         //tillad 0.25 afvigelse
         assertEquals(222, 222.1, 0.25, "Afvigelse 0.1");
     }
+
+    @Test
+    void getInjectedUrl(){
+        assertEquals("TestUrl", calculator.getUrl(), "URL injected");
+    }
 }
